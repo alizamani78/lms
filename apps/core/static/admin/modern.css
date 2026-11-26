@@ -1,0 +1,40 @@
+/* Modern skin for the Django admin (RTL, Persian). Pure CSS: no external fonts or scripts (CSP-friendly). */
+:root {
+  --lms-primary: #1f6f5c; --lms-primary-2: #2a8c74; --lms-bg: #f3f6f9; --lms-card: #ffffff;
+  --lms-ink: #1d2733; --lms-mute: #6b7785; --lms-line: #e3e9ef; --lms-radius: 14px;
+  --lms-shadow: 0 1px 2px rgba(16,24,40,.06), 0 4px 16px rgba(16,24,40,.06);
+}
+body { background: var(--lms-bg); color: var(--lms-ink); font-family: Tahoma, "Segoe UI", system-ui, sans-serif; }
+#header { background: linear-gradient(120deg, var(--lms-primary), var(--lms-primary-2)); box-shadow: var(--lms-shadow);
+  position: sticky; top: 0; z-index: 50; min-height: 58px; border: 0; }
+#header a, #header #user-tools { color: #fff; }
+#branding h1, #site-name { color: #fff; }
+.lms-brand { display: flex; align-items: center; gap: 10px; }
+.lms-brand small { display: block; opacity: .85; font-size: 11px; }
+.lms-logo { width: 36px; height: 36px; border-radius: 10px; background: rgba(255,255,255,.18); display: inline-grid;
+  place-items: center; font-weight: 700; font-size: 18px; }
+#user-tools a { color: #fff; }
+#nav-sidebar { background: #fff; border-inline-start: 1px solid var(--lms-line); }
+#nav-sidebar .module caption, .module h2, .module caption { background: transparent; color: var(--lms-primary);
+  font-weight: 700; font-size: 14px; padding: 10px 12px; }
+.module { background: var(--lms-card); border: 1px solid var(--lms-line); border-radius: var(--lms-radius);
+  box-shadow: var(--lms-shadow); overflow: hidden; margin-bottom: 18px; }
+.module table th, .module table td { border-color: var(--lms-line); }
+#content { padding: 22px 26px; }
+#content-main { min-width: 0; }
+.dashboard #content { max-width: 1280px; margin: 0 auto; }
+.app-list, #content-main .module { border-radius: var(--lms-radius); }
+input[type=text], input[type=password], input[type=email], input[type=url], input[type=number], input[type=tel],
+input[type=date], input[type=datetime-local], textarea, select {
+  border: 1px solid var(--lms-line); border-radius: 10px; padding: 8px 10px; background: #fff; color: var(--lms-ink); }
+input:focus, textarea:focus, select:focus { outline: 2px solid rgba(31,111,92,.25); border-color: var(--lms-primary); }
+.button, input[type=submit], input[type=button], .submit-row input, a.button {
+  background: var(--lms-primary); color: #fff; border: 0; border-radius: 10px; padding: 8px 16px; box-shadow: none; }
+.button:hover, input[type=submit]:hover { background: var(--lms-primary-2); }
+.button.cancel-link, .submit-row a.deletelink { background: #fdecea; color: #b3261e; }
+.changelist-filter, #changelist .actions { border-radius: 10px; }
+.paginator { border-top: 1px solid var(--lms-line); }
+.object-tools a { border-radius: 10px; }
+.errornote, .errorlist { border-radius: 10px; }
+.breadcrumbs { background: transparent; color: var(--lms-mute); }
+@media (max-width: 760px) { #content { padding: 12px; } }

@@ -1,0 +1,8 @@
+{% extends "admin/base.html" %}
+{% load static %}
+{% block extrahead %}{{ block.super }}
+<link rel="stylesheet" href="{% static 'admin/modern.css' %}">
+{% endblock %}
+{% block branding %}
+<div class="lms-brand"><span class="lms-logo">ر</span><div><strong>{{ site_header|default:"پنل مدیریت" }}</strong><small>سامانه آموزش رضوی</small></div></div>
+{% endblock %}
