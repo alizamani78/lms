@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Razavi LMS — Django/DRF core (v0.1)
 
 Implements the backend foundation from the deployment design: org-scoped RBAC (province → region → school),
@@ -273,3 +274,6 @@ Load-test results (run the plan in the deployment doc), SSO integration, Adobe C
 notifications/SMS, file upload via
 object storage, front-end. Treat capacity numbers as unverified until load-tested. The code was not executed in
 the authoring sandbox (Django could not be installed there): run the test suite first and fix any environment issues.
+=======
+# lms
+>>>>>>> 685605f60698c89d44e6b2c98958eadf989d4975
